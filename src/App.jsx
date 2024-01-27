@@ -36,10 +36,16 @@ const App = () => {
   })
   return (
     <>
-      <Buscador dataFilter={dataFilter} setDataFilter={setDataFilter}/>
-      <Listado datos={buscar} sacarId={sacarId}/>
-      <Formulario nuevosColaboradores={nuevosColaboradoresConId} mostrarAlerta={mostrarAlerta}/>
-      <Alerta mensaje={alerta.mensaje} color={alerta.color}/>
+    <main>
+    <section>
+       <Buscador dataFilter={dataFilter} setDataFilter={setDataFilter}/>
+       <Listado datos={buscar} sacarId={sacarId}/>
+    </section>
+    <aside>
+       <Formulario nuevosColaboradores={nuevosColaboradoresConId} mostrarAlerta={mostrarAlerta}/>
+       <Alerta mensaje={alerta.mensaje} color={alerta.color}/>
+    </aside>
+    </main>
     </>
   );
 };
